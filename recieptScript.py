@@ -112,7 +112,7 @@ while run:
                 currentReceipt.claimItem(tempUser)
 
             case 1:
-                print(", ".join(map(str,currentReceipt.items))) if len(currentReceipt) > 0 else print("No Items Added!")
+                print(", ".join(map(str,currentReceipt.items))) if len(currentReceipt.items) > 0 else print("No Items Added!")
                 choice = input(f"Select 0 to {len(currentReceipt.items)-1} to select the item\n if desired item doesnt exist, enter 'A' ")
                 if choice == "A":
                     currentReceipt.addNewItem(tempUser)
